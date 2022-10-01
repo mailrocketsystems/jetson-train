@@ -1,0 +1,1 @@
+Place your video file here to extract images from it

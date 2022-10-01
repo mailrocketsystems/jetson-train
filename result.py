@@ -40,7 +40,7 @@ for file in fileLst:
 
 
 
-print("Bes Checkpoint: {}".format(bestChkpt))
+print("Best Checkpoint: {}".format(bestChkpt))
 plt.plot(x, y)
 plt.xlabel("Epochs")
 plt.ylabel("Loss")

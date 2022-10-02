@@ -56,7 +56,7 @@ This will start the training. You can adjust the number of epochs/workers as per
 
 Step 3:
 =============
-Once your training completes or your loss is very low, you can use results.py script to analyze your result. Running the script, will generate a graph of the training and will also output the best checkpoint.
+Once your training completes or your loss is very low, you can use `results.py` script to analyze your result. Running the script, will generate a graph of the training and will also output the best checkpoint.
 
 <img src="/img/graph.PNG" alt="Alt text" title="graph">
 

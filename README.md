@@ -25,7 +25,7 @@ Make sure you have installed below python packages before you start setting up y
 
 <a href="https://youtu.be/fZiY7zUk3TU" title="Watch video tutorial here">
   <p align="center">
-    <img width="75%" src="https://img.youtube.com/vi/fZiY7zUk3TU/maxresdefault.jpg" alt="Watch video tutorial here"/>
+    <img width="75%" src="https://img.youtube.com/vi/fZiY7zUk3TU/0.jpg" alt="Watch video tutorial here"/>
   </p>
 </a>
 

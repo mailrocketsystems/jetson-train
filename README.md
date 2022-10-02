@@ -20,4 +20,6 @@ Make sure you have installed below python packages before you start setting up y
 	$ pip3 install urllib3
 
 
-
+Step 1:
+=============
+Clone the repository in your machine. Download and save your test video file in videos directory. Use prepare_dataset script to extract images from your testvideo file. You can adjust the save image counter in prepare_dataset script in order to save more images. Once run, this script will create three directories inside data directory. 

@@ -63,7 +63,7 @@ Once your training completes or your loss is very low, you can use `results.py` 
 
 Step 4:
 =============
-Make sure you have jetson-inference project installed on your Jetson device. Once you are satisfied with the training results, you can copy the checkpoint file and the labels.txt from your machine to Jetson Nano or Xavier. Place them inside 
+Make sure you have jetson-inference project installed on your Jetson device. Once you are satisfied with the training results, you can copy the checkpoint file and the labels.txt from your machine to Jetson Nano or Xavier. Place them inside :
 
     $ /home/username/jetson-inference/python/training/detection/ssd/models
 	

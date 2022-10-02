@@ -60,3 +60,17 @@ Once your training completes or if you will loss is very low, you can use result
 
 <img src="/img/graph.PNG" alt="Alt text" title="graph">
 
+
+Step 4:
+=============
+Make sure you have jetson-inference project installed on your Jetson device. Once you are satisfied with the training results, you can copy the checkpoint file and the labels.txt from your machine to Jetson Nano or Xavier. Place them inside 
+
+    $ /home/username/jetson-inference/python/training/detection/ssd/models
+	
+
+Lets first convert checkpoint to onnx format by running below command from `ssd` directory:
+
+    $ python3 onnx_export.py --model-dir=models/model0110
+	
+
+

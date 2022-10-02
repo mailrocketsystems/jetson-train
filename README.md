@@ -1,7 +1,8 @@
-pyembedded
+Jetson Train
 ==========
 
-Python library to get data from embedded modules like RFID, GPS, GSM, Raspberry Pi
+This repository contains step by step guide to build and train your own model for Jetson Nano or Xavier or any other model. 
+You need Ubuntu 18 or higher to follow this guide.
 
 Note that some of the hardware like RFID, GPS, GSM can directly be interfaced with Windows or Linux based machine but some of the modules will require Raspberry Pi or other similar embedded devices.
 

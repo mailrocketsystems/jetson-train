@@ -31,8 +31,8 @@ Make sure you have installed below python packages before you start setting up y
 
 
 <div align="left">
-      <a href="https://www.youtube.com/watch?v=fZiY7zUk3TU">
-         <img src="https://img.youtube.com/vi/fZiY7zUk3TU/0.jpg" style="width:100%;">
+      <a href="https://www.youtube.com/watch?v=w8yWXqWQYmU">
+         <img src="https://img.youtube.com/vi/w8yWXqWQYmU/0.jpg" style="width:100%;">
       </a>
 </div>
 

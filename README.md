@@ -56,7 +56,7 @@ This will start the training. You can adjust the number of epochs/workers as per
 
 Step 3:
 =============
-Once your training completes or if you will loss is very low, you can use results.py script to analyze your result. Running the script, will generate a graph of the training and will also output the best checkpoint.
+Once your training completes or your loss is very low, you can use results.py script to analyze your result. Running the script, will generate a graph of the training and will also output the best checkpoint.
 
 <img src="/img/graph.PNG" alt="Alt text" title="graph">
 
@@ -71,6 +71,14 @@ Make sure you have jetson-inference project installed on your Jetson device. Onc
 Lets first convert checkpoint to onnx format by running below command from `ssd` directory:
 
     $ python3 onnx_export.py --model-dir=models/model0110
+	
+
+This will generate onnx file. From here we can use below command to generate engine file:
+
+    $ detectnet --model=models/model0110/ssd-mobilenet.onnx --labels=models/model0110/labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /home/rocket/testvideo.mp4
+	
+
+where model0110 is the name of your model. Make sure you replace `/home/rocket/testvideo.mp4` with path of your test video file or webcam/RTSP camera. This command can take upto 10-12mins to complete. 
 	
 
 

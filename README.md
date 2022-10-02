@@ -3,10 +3,10 @@ Jetson Train
 
 This repository contains step by step guide to build and train your own model for Jetson Nano or Xavier or any other model. 
 
-You need Ubuntu 18 or higher to follow this guide.
+You need Ubuntu 18 or higher to follow this guide. You will also find the output model files in the repo for the model I trained for apples and banana.
 
 
-<img src="/img/result.PNG" alt="Alt text" title="Optional title">
+<img src="/img/result.PNG" alt="Alt text" title="results">
 
 
 Installation:
@@ -58,5 +58,5 @@ Step 3:
 =============
 Once your training completes or if you will loss is very low, you can use results.py script to analyze your result. Running the script, will generate a graph of the training and will also output the best checkpoint.
 
-<img src="/path/to/img.jpg" alt="Alt text" title="Optional title">
+<img src="/img/graph.PNG" alt="Alt text" title="graph">
 

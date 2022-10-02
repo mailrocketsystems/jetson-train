@@ -6,6 +6,9 @@ This repository contains step by step guide to build and train your own model fo
 You need Ubuntu 18 or higher to follow this guide.
 
 
+<img src="/img/result.PNG" alt="Alt text" title="Optional title">
+
+
 Installation:
 =============
 Make sure you have installed below python packages before you start setting up your machine for training ::
@@ -49,4 +52,11 @@ For ex, if your model name is model0110, then command will be:
 	
 
 This will start the training. You can adjust the number of epochs/workers as per your requirements.
+
+
+Step 3:
+=============
+Once your training completes or if you will loss is very low, you can use results.py script to analyze your result. Running the script, will generate a graph of the training and will also output the best checkpoint.
+
+<img src="/path/to/img.jpg" alt="Alt text" title="Optional title">
 

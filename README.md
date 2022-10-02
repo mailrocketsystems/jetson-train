@@ -23,16 +23,11 @@ Make sure you have installed below python packages before you start setting up y
 	$ pip3 install urllib3
 
 
-<a href="https://youtu.be/fZiY7zUk3TU" title="Watch video tutorial here">
-  <p align="center">
-    <img width="75%" src="https://img.youtube.com/vi/fZiY7zUk3TU/0.jpg" alt="Watch video tutorial here"/>
-  </p>
-</a>
 
 
 <div align="left">
-      <a href="https://www.youtube.com/watch?v=w8yWXqWQYmU">
-         <img src="https://img.youtube.com/vi/w8yWXqWQYmU/0.jpg" style="width:100%;">
+      <a href="https://www.youtube.com/watch?v=fZiY7zUk3TU">
+         <img src="https://img.youtube.com/vi/fZiY7zUk3TU/0.jpg" style="width:100%;">
       </a>
 </div>
 

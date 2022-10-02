@@ -27,3 +27,26 @@ Clone the repository in your machine. Download and save your test video file in 
     $ JPEGImages: This directory will have all the images extracted from test video file.
 	$ ImageSets: This directory will contain few train and test file.
 	$ Annotations: Save all your annotation xml files in this directory.
+	
+	
+You can use any tool to annotate your images. Make sure you are using Pascal VOC format. Save all you annotation xml files in Annotations directory. Once done, create labels.txt file inside your model directory. This file will contain all the labels name from your dataset. For ex, 
+
+    $ object_name1
+	$ object_name2
+	$ object_name3
+	
+	
+Step 2:
+=============
+In order to start training, use below command:
+
+    $ python3 train_ssd.py --dataset-type=voc --data=data/{modelname}/ --model-dir=models/{modelname} --batch-size=2 --workers=5 --epochs=500
+
+
+For ex, if your model name is model0110, then command will be:
+
+    $ python3 train_ssd.py --dataset-type=voc --data=data/model0110/ --model-dir=models/model0110 --batch-size=2 --workers=5 --epochs=500
+	
+
+This will start the training. You can adjust the number of epochs/workers as per your requirements.
+

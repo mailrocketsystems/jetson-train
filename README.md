@@ -80,5 +80,5 @@ This will generate onnx file. From here we can use below command to generate eng
 
 where model0110 is the name of your model. Make sure you replace `/home/rocket/testvideo.mp4` with path of your test video file or webcam/RTSP camera. This command can take upto 10-12mins to complete. 
 	
-
+If you want to use the model file which I trained for apples & banan, you can download it from `mymodels` directory.
 

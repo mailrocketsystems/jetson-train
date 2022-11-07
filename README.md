@@ -23,7 +23,7 @@ Make sure you have installed below python packages before you start setting up y
 	$ pip3 install urllib3
 
 
-
+Watch video below: 
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=fZiY7zUk3TU">

@@ -9,7 +9,7 @@ res = input("\r\nPlease enter model name: ")
 
 dirLst = os.listdir("data")
 if res in dirLst:
-    print("\r\nError. Model directory already exists. Please choose some other name or remove the current directory\r\n")
+    print("\r\nError. Model directory already exists. Please choose some other name or delete the current directory\r\n")
     sys.exit() 
 
 print("Making directory structure")
@@ -17,7 +17,30 @@ os.makedirs("data/{}/Annotations".format(res))
 os.makedirs("data/{}/ImageSets/Main".format(res))
 os.makedirs("data/{}/JPEGImages".format(res)) 
 
-cap = cv2.VideoCapture('videos/testvideo.mp4')
+def rrmdir(path):
+    for entry in os.scandir(path):
+        if entry.is_dir():
+            rrmdir(entry)
+        else:
+            os.remove(entry)
+    os.rmdir(path)
+
+
+fileLst = os.listdir('videos')
+fileLst.remove('readme.txt')
+if len(fileLst) == 0:
+    print("No test video found in videos dir.")
+    rrmdir("data/{}".format(res))
+    sys.exit(0)
+elif len(fileLst) > 1:
+    print("Multiple videos found in videos dir. Please enter the name of the video to use\r")
+    print(fileLst)
+    vname = input("Please enter the full name of the video to use for dataset with extension(.mp4): ")
+elif len(fileLst) == 1:
+    vname = fileLst[0]
+    
+
+cap = cv2.VideoCapture('videos/{}'.format(vname))
 
 # Adjust saveImg value as per your choice
 # High value will have less images saved
@@ -46,6 +69,11 @@ while True:
     key = cv2.waitKey(1)
     if key == ord('q'):
         break
+
+if frameCnt == 0:
+    print("Unable to process video. Error reading video file. Exiting...\r\n")
+    rrmdir("data/{}".format(res))
+    sys.exit(0)
 
 endTime = datetime.datetime.now()
 diff = endTime - startTime

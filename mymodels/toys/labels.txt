@@ -1,0 +1,4 @@
+BACKGROUND
+roller
+car
+phone

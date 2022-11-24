@@ -8,6 +8,8 @@ You need Ubuntu 18 or higher to follow this guide. You will also find the output
 
 <img src="/img/result.PNG" alt="Alt text" title="results">
 
+<img src="/img/result2.png" alt="Alt text" title="results">
+
 
 Installation:
 =============
